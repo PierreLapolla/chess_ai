@@ -1,5 +1,5 @@
 [project]
-name = "lightning-template"
+name = "chess_ai"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -10,14 +10,15 @@ authors = [
 requires-python = ">=3.13"
 dependencies = [
     "chess>=1.11.2",
-    "datasets>=3.5.0",
     "lightning>=2.5.1",
-    "pydantic-settings>=2.8.1",
-    "python-dotenv>=1.1.0",
+    "matplotlib>=3.10.1",
+    "numpy>=2.2.4",
+    "pygame>=2.6.1",
+    "pyqt5>=5.15.11",
+    "pyside6>=6.9.0",
     "structlog>=25.2.0",
     "torch>=2.6.0",
-    "torchvision>=0.21.0",
-    "wandb>=0.19.9",
+    "tqdm>=4.67.1",
 ]
 
 [build-system]
@@ -26,7 +27,6 @@ build-backend = "hatchling.build"
 
 [dependency-groups]
 dev = [
-    "pre-commit>=4.2.0",
     "pytest>=8.3.5",
     "pytest-cov>=6.0.0",
 ]
